@@ -40,7 +40,7 @@ post2 = Post.create!(content:"Should i invest all my money in Gamestop or invest
 post1 = Post.create!(content:"Should i keep wearing khaki pants or try jeans??", img_url:"https://www.landsend.com/article/jeans-versus-khakis/images/feat-m.jpg", wall: jakewall)
 Vent1 = Post.create!( content:"I need help deciding on a name for my APP, i am stuck between Voura and This or that", img_url:"http://4.bp.blogspot.com/-LQ9xZOrXNE8/VoALGBUKY2I/AAAAAAAARRI/Jagihem1STI/s1600/NeedHelpNaming2.jpg",wall:victorwall)
 Vent9 = Post.create!( content:"Cant decide between a honda accord or a mustang", img_url:"https://www.motortrend.com/uploads/sites/5/2015/08/2016-Honda-Accord-vs-2015-Ford-Mustang-Ecoboost-promo.jpg?fit=around%7C875:492",wall:flowall)
-Vent10 = Post.create!( content:"Iphone or andriod", img_url:"https://cdn.pocket-lint.com/r/s/1200x/assets/images/145016-news-android-vs-iphone-which-is-best-for-you-image1-zc2bj8rvny.jpg",wall:flowall)
+Vent10 =Post.create!( content:"Iphone or andriod", img_url:"https://cdn.pocket-lint.com/r/s/1200x/assets/images/145016-news-android-vs-iphone-which-is-best-for-you-image1-zc2bj8rvny.jpg",wall:flowall)
 Vent3 = Post.create!( content:"Should i be a software engineer or a data analyst", img_url:"https://www.business.com/images/content/5ca/3e1aa5a215e8a458bb313/1500-0-",wall:victorwall)
 Vent4 = Post.create!( content:"Apologize to a kid i accidently punched iceskating ?", img_url:"https://townsquare.media/site/44/files/2017/08/ThinkstockPhotos-621707146.jpg",wall:victorwall)
 Vent5 = Post.create!( content:"My girlfriend said either her or anime", img_url:"https://wallpapercave.com/wp/wp3153743.png",wall:victorwall)
@@ -67,15 +67,6 @@ feedback6 = Feedback.create!(user_id:User.third.id,post_id:Post.second.id, comme
 feedback7 = Feedback.create!(user_id:User.fourth.id,post_id:Post.second.id, comment:"Khakis give you more of a formal look and therfore youre trusted more ", pro:true, con:false )
 feedback8 = Feedback.create!(user_id:User.third.id,post_id:Post.second.id, comment:"Khaki pants give you less of a tight fit", pro:true, con:false )
 feedback9 = Feedback.create!(user_id:User.first.id,post_id:Post.third.id, comment:"HOWDY", pro:true, con:false )
-
-
-
-
-# t.integer "user_id"
-# t.integer "post_id"
-# t.string "comment"
-# t.boolean "pro"
-# t.boolean "con""
 
 
 puts "seeding friendships"
